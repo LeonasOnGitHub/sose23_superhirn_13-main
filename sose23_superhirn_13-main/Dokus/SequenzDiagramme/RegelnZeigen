@@ -1,0 +1,13 @@
+title Regeln Zeigen
+
+participant User
+participant UI
+
+
+User->UI: onClick(RegelButton)
+
+User<--UI:showRuleView()
+
+User->UI: onClick(Return)
+
+User<--UI:showMainView()

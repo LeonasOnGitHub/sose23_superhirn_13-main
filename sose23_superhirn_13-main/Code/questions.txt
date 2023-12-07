@@ -1,0 +1,6 @@
+Com: update_possible_moves, wieso wird rolle übergeben?
+
+Com: hat com nen privates atribut controll, wo der referenzierte controller gespeichert ist?
+ --> kann replaced werden mit mock --> testbarer
+ -------------------
+ should we add enum(0) to show holes? for feedback array maybe

@@ -1,0 +1,13 @@
+ID:5
+Use Case Name: Rater Spielzug durchführen
+Primary Actor: Spieler
+Goal in Context: Als Spieler einen Spielzug durchführen
+Scope: MasterMind Applikation
+Preconditions: man muss sich im Spiel in der Rolle des Rater befinden, und Spieler muss dran sein
+Main Success Scenario:
+    1. Spieler plaziert 4 Stifte; Siehe UC 7 Stift plazieren
+    2. Spieler checkt vollständige eingabe ein
+Extensions: 
+    2a Spieler checkt unvollständige eingabe ein --> Spiel lehnt Eingabe ab
+Postconditions: 
+    Mitspieler ist am Zug

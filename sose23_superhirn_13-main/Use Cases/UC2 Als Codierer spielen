@@ -1,0 +1,18 @@
+ID:2
+Use Case Name: Als Codierer spielen 
+Goal in Context: Als Codierer eine Runde spielen
+Scope: MasterMind Applikation 
+Preconditions: Spiel muss gestartet sein, Spiel muss sich im Hauptmenü befinden
+Main Succress Scenario:
+    1. User wählt codierer Rolle im hauptmenü aus
+    2. Codierer-Screen erscheint, mit Brett und veschieden farbigen Stifte zur auswahl
+    3. User wählt einen 4-stelligen Code; Siehe UC 7 Stift platzieren
+    4. User checkt Code ein
+    5. Com macht Spielzug; Siehe UC 5 Rater SPielzug machen
+    6. User ist am Zug; Siehe UC 6 Codierer Spielzug durchführen
+    7. Wiederhole Schritte 5&6 bis 10 Versuche erreicht wurden
+Extensions: 4a, Code ist unvollständig, --> abgelehnt --> schritt 3
+            7a  Com löst den Code innerhalb von 10 Versuchen --> User hat verloren
+            7b  Com merkt, dass es keinen möglichen Code gibt --> User hat betrogen und verliert
+Postconditions: Spiel ist im Endscreen
+

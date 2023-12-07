@@ -1,0 +1,3 @@
+([('ui',
+   '/Users/pedro/Desktop/Uni/Semster_4/SE2/sose23_superhirn_13/dist/ui',
+   'EXECUTABLE')],)

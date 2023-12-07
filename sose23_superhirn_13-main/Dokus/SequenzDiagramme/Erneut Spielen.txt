@@ -1,0 +1,12 @@
+title Erneut Spielen 
+
+actor User
+participant Screen
+participant Controller
+participant Model
+
+
+User->Screen:btn_play_again()
+Screen->Controller:play_again()\n
+Controller->Controller:start_new_game(role)\n
+note right of Controller:Siehe entweder \n-SD Rater Runde Spielen \n-SD Codierer Code Erstellen

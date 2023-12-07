@@ -1,0 +1,26 @@
+title Rater Spielzug
+
+actor User
+
+loop x4
+User->Screen: choose_code_hole(position)
+Screen-->User: show_code_pin_menu()
+User->Screen: choose_code_pin(farbe)
+end
+User->Screen: final_code_check_in(farb_combi)
+
+
+alt if slots_filled = 4
+
+Screen->Controller: final_code_check_in_init(colors,positions)
+Controller->Controller: check_colorcode
+Model-->Controller: board_arrays
+Controller->Model:place_colorcode(colors,positions)
+Controller->Screen: view_update(board_arrays)
+Screen->User: next_round()
+
+else else
+
+Screen->User: error_popup(message)
+end
+

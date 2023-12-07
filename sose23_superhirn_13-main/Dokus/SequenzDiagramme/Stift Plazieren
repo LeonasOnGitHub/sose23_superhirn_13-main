@@ -1,0 +1,19 @@
+title Stift Plazieren
+
+
+actor User
+participant Screen
+participant SoundSystem
+
+loop x4
+User->Screen: click_on_hole()
+Screen->>SoundSystem: play_tone(click)
+Screen-->User:show_color_menu()
+
+User->Screen: select_color(color)
+Screen->>SoundSystem: play_tone(click)
+Screen->Screen: save_color_temp(color, position)
+
+note right of Screen:color and position are temporarily saved in an array
+Screen-->User: show_view()
+end

@@ -1,0 +1,14 @@
+ID: 3
+Use Case Name: Als Rater spielen
+Primary Actor: User
+Goal in Context: Als Rater eine Runde spielen
+Scope: MasterMind Applikation
+Preconditions: Spiel muss gestartet sein, Spiel muss sich im Hauptmenü befinden
+Main Success Scenario:
+    1. User wählt Rater-Rolle im Hauptmenü aus
+    2. Com generiert einen zufälligen 4-stelligen Code
+    3. User gibt einen Versuch ab; Siehe UC 5 Rater Spielzug durchführen
+    4. Com gibt Feedback zum Versuch des Users; Siehe UC6 Codierer Spielzug durchführen
+    5. Wiederhole Schritte 3 und 4 bis der User den Code löst hat
+Extensions: 5a  Wird maximale Anzahl an Versuchen (10) erreicht, verliert der User --> Spiel ist beendet
+Postconditions: Das Spiel ist beendet und der Endscreen wird angezeigt

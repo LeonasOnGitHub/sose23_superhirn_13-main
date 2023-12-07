@@ -1,0 +1,17 @@
+ID:6
+Use Case Name: Codierer Spielzug durchführen
+Primary Actor: Spieler
+Goal in Context: Als User dem Computer Feedback geben
+Scope: Codierer-Zustand
+Preconditions: 
+    Spieler muss sich im Spiel in der Rolle des Codierer befinden, und Spieler muss dran sein
+    Mitspieler hat schon einen Zug gemacht
+Main Success Scenario:
+    1. Spieler plaziert 0 bis 4 Stifte (in rot oder weiß); Siehe UC7 Stift Plazieren 
+    2. Spieler checkt korrekte Feedback-eingabe ein
+Extensions: 
+    1a Spieler gibt inkorrekte postion ab (zu weit oben oder unten) --> Spiel lehnt inkorrekte Eingabe ab
+    1b Spieler gibt korrekte bereits belegte position an --> alter Stift wird überschrieben
+    2a Spieler checkt inkorrekte Feedback-eingabe ein --> keine Reaktion des Spiels
+Postconditions: 
+    Mitspieler ist am Zug
